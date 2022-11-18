@@ -1,0 +1,819 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'IranSans';
+}
+
+body {
+    direction: rtl;
+
+
+}
+
+a {
+    text-decoration: none;
+}
+
+header a {
+    color: #333;
+    font-size: 13px;
+}
+
+header a:hover:not(#cart) {
+    color: rgba(51, 51, 51, .7);
+}
+
+header p:hover(:not(#support-worldwide p)) {
+    color: rgba(51, 51, 51, .7);
+}
+
+header #contactUs, #aboutUs {
+    display: none;
+
+}
+
+li {
+    list-style-type: none;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 85px;
+    padding-top: 10px;
+}
+
+.menu {
+    /* display: flex; */
+    display: inline-block;
+}
+
+.menu>* {
+    margin-left: 7px;
+    display: inline-block;
+}
+
+.menu li {
+    border-left: 1px solid rgba(0, 0, 0, 0.2);
+    padding-left: 7px;
+    line-height: 17px;
+}
+
+#rightMenu {
+
+    float: right;
+}
+
+#leftMenu {
+    float: left;
+}
+
+#leftMenu .menu>li:last-child {
+    border-left: 0px;
+}
+
+#news {
+    display: inline-block;
+    font-size: 13px;
+    color: rgba(51, 51, 51, 0.7) !important;
+}
+
+.inline-block {
+    display: inline-block;
+    line-height: 29px;
+}
+
+#login a::before {
+    font-family: 'Font Awesome 5 light';
+    display: inline-block;
+    content: "\f007";
+}
+
+#compare a::before {
+    font-family: 'Font Awesome 5 light';
+    display: inline-block;
+    content: "\f074";
+    margin-left: 5px;
+}
+
+#wishList a::before {
+    font-family: 'Font Awesome 5 light';
+    display: inline-block;
+    content: "\f004";
+}
+
+#middleMenu {
+    margin: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 85px;
+}
+
+
+#searchBar {
+    min-width: 76%;
+    max-width: 100%;
+    height: 42px;
+    border: 0px;
+    padding-right: 9px;
+    margin-top: 3px;
+    font-size: 12px;
+    background-color: transparent;
+}
+
+#searchBar:focus {
+    border: 0;
+    outline: none;
+}
+
+
+#category {
+    /* width: 90px; */
+    height: 31px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-top: 0px;
+    border-bottom: 0px;
+    padding: 0px 8px;
+    /* margin: 0 16px; */
+}
+
+.searchBar {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    width: 59%;
+    padding: 0px 0px;
+    height: 42px;
+}
+
+.searchBar span::after {
+    font-family: 'Font Awesome 5 light';
+    display: inline-block;
+    content: "\f002";
+    font-size: 21px;
+    opacity: 0.5;
+    padding-right: 10px;
+}
+
+#support-worldwide {
+    width: 23%;
+    display: flex;
+    justify-content: space-between;
+    color: #242424;
+    font-size: 12px;
+}
+
+#support-worldwide #tel, #details {
+    color: #439665;
+}
+
+.align-center-item {
+    display: flex;
+    align-items: center;
+}
+
+.fa-chevron-down::after {
+    content: "\f078";
+    font-family: 'Font Awesome 5 light';
+    display: inline-block;
+    font-size: 10px;
+    opacity: 0.5;
+    margin-right: 10px;
+}
+
+#bottomMenu {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 87px;
+}
+
+#cart {
+    position: relative;
+}
+
+#cart::after {
+    content: "\f07a";
+    /* content: "\f23d"; */
+    font-family: 'Font Awesome 5 light';
+    display: inline-block;
+    color: #439665;
+    transform: scaleX(-1);
+    font-size: 17px;
+}
+
+#cart::before {
+    background-color: #439665;
+    opacity: 0.15;
+    content: "";
+    width: 45px;
+    height: 45px;
+    border-radius: 100px;
+    display: block;
+    position: absolute;
+    left: -14px;
+    bottom: -9px;
+}
+
+#countProduct {
+    position: absolute;
+    background-color: #439665;
+    border-radius: 100px;
+    /* display: block; */
+    right: 24px;
+    bottom: 21px;
+    color: #fff;
+    font-size: 10px;
+    width: 15px;
+    height: 16px;
+    line-height: 17px;
+    text-align: center;
+}
+
+#cost {
+    position: absolute;
+    right: 41px;
+    top: 0px;
+}
+
+.custom-line {
+    position: relative;
+    display: block;
+    /* opacity: 0.5; */
+    margin-top: 14px;
+    margin-bottom: 34px;
+}
+
+.custom-line::after {
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: black;
+    width: 100%;
+    height: 1px;
+    opacity: 0.1;
+}
+
+.header-category-menu>li {
+    margin-left: 40px;
+}
+
+.header-category-menu .menu-title {
+    margin-right: 5px;
+}
+
+
+
+
+/* Footer.............................. */
+footer {
+    background-color: #282828;
+    padding: 28px 67px;
+    font-size: 13px;
+}
+
+footer .footer-top ul>li {
+    width: 16%;
+}
+
+footer .footer-top svg {
+    width: 50px !important;
+    height: 50px !important;
+    margin-left: 5px;
+}
+
+footer .footer-top h5 {
+    color: #fff;
+}
+
+footer span, footer p {
+    color: rgba(255, 255, 255, .6);
+    margin-top: 0px;
+    text-align: justify;
+}
+
+footer .custom-line::after {
+    background-color: rgba(255, 255, 255) !important;
+    opacity: 0.2 !important;
+}
+
+.footer-middle {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+#descContactUs {
+    line-height: 30px;
+}
+
+.footer-middle>div {
+    width: 20%;
+    margin-left: 40px;
+    /* height: 50%; */
+}
+
+.footer-middle :first-child ul {
+    margin-top: 26px;
+}
+
+.footer-middle h4 {
+    color: #fff;
+    margin: 0;
+}
+
+#social-medias {
+    cursor: pointer;
+}
+
+.fa-facebook::before {
+    font-family: 'Font Awesome 5 brands';
+    content: "\f39e";
+    display: inline-block;
+    color: white;
+    font-size: 16px;
+    opacity: 1;
+    margin-right: 0px;
+}
+
+.fa-facebook:hover::before {
+    color: rgba(255, 255, 255, .6);
+    ;
+}
+
+.fa-instagram::before {
+    font-family: 'Font Awesome 5 brands';
+    content: "\f16d";
+    display: inline-block;
+    color: white;
+    font-size: 16px;
+    opacity: 1;
+    margin-right: 10px;
+}
+
+.fa-instagram:hover::before {
+    color: rgba(255, 255, 255, .6);
+    ;
+}
+
+.fa-pinterest::before {
+    font-family: 'Font Awesome 5 brands';
+    content: "\f0d2";
+    display: inline-block;
+    color: white;
+    font-size: 16px;
+    opacity: 1;
+    margin-right: 10px;
+}
+
+.fa-pinterest:hover::before {
+    color: rgba(255, 255, 255, .6);
+    ;
+}
+
+.fa-twitter::before {
+    font-family: 'Font Awesome 5 brands';
+    content: "\f099";
+    display: inline-block;
+    color: white;
+    font-size: 16px;
+    opacity: 1;
+    margin-right: 10px;
+}
+
+.fa-twitter:hover::before {
+    color: rgba(255, 255, 255, .6);
+    ;
+}
+
+.fa-whatsapp::before {
+    font-family: 'Font Awesome 5 brands';
+    content: "\f232";
+    display: inline-block;
+    color: white;
+    font-size: 16px;
+    opacity: 1;
+    margin-right: 10px;
+}
+
+.fa-whatsapp:hover::before {
+    color: rgba(255, 255, 255, .6);
+    ;
+}
+
+.fa-youtube::before {
+    font-family: 'Font Awesome 5 brands';
+    content: "\f167";
+    display: inline-block;
+    color: white;
+    font-size: 16px;
+    opacity: 1;
+    margin-right: 10px;
+}
+
+.fa-youtube:hover::before {
+    color: rgba(255, 255, 255, .6);
+    ;
+}
+
+.footer-middle #support-links {
+    margin: 29px 0;
+}
+
+.footer-middle #support p {
+    margin-top: 18px;
+}
+
+.footer-middle #useful-links #useful-links-list ul li a {
+    color: rgba(255, 255, 255, .6);
+}
+
+.footer-middle #useful-links #useful-links-list ul li {
+    margin-top: 15px;
+}
+
+.footer-middle #info #info-links-list ul li a {
+    color: rgba(255, 255, 255, .6);
+}
+
+.footer-middle #info #info-links-list ul li {
+    margin-top: 15px;
+}
+
+.footer-middle #categories #categories-links-list ul li a {
+    color: rgba(255, 255, 255, .6);
+}
+
+.footer-middle #categories #categories-links-list ul li {
+    margin-top: 15px;
+}
+
+.footer-bottom {
+    color: rgba(255, 255, 255, .6);
+    font-size: 12px;
+}
+
+.footer-bottom a {
+    color: rgba(255, 255, 255, .6);
+}
+
+.hover-white:hover {
+    color: #fff !important;
+}
+
+header #burgerMenu {
+    background-color: #fff;
+    position: fixed;
+    right: -100%;
+    top: 0;
+    bottom: 0;
+    width: 300px;
+    z-index: 9999;
+    transition: 0.5s;
+    padding-left: 10px;
+    overflow-y: scroll;
+}
+
+#closeBurgerMenu {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9998;
+    background-color: #333;
+    opacity: 0.5;
+}
+
+#bottomMenuResponsive {
+    display: none;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    width: 100%;
+    background-color: #fff;
+    padding: 5px 0px;
+}
+
+#bottomMenuResponsive>ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.fa-user::before {
+    font-family: 'Font Awesome 5 light';
+    content: "\f007";
+    display: block;
+    padding-right: 33px;
+    font-size: 20px;
+}
+
+.fa-random::before {
+    font-family: 'Font Awesome 5 light';
+    content: "\f074";
+    display: block;
+    padding-right: 11px;
+    font-size: 20px;
+}
+
+.fa-heart::before {
+    font-family: 'Font Awesome 5 light';
+    content: "\f004";
+    display: block;
+    padding-right: 29px;
+    font-size: 20px;
+}
+
+.fa-shopping-bag::before {
+    font-family: 'Font Awesome 5 light';
+    content: "\f290";
+    display: block;
+    padding-right: 13px;
+    font-size: 20px;
+}
+
+
+.size-m {
+    display: none;
+}
+
+.fa-chevron-left::before {
+    content: "\f053";
+    font-family: 'Font Awesome 5 light';
+}
+.home-chevron-left{
+    display: inline-block;
+    font-size: 10px;
+    opacity: 0.5;
+    margin-right: 10px;
+}
+
+/* ********************************** body *************************** */
+#slider {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 600px;
+}
+
+.slide {
+width: 1920px;
+height: inherit;
+position: relative;
+background-position: 0px -55px;
+background-repeat: no-repeat;
+background-size: cover;
+/* float: right; */
+}
+
+.slide #description {
+    position: absolute;
+    width: 28%;
+    top: 164px;
+    right: 492px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.slide #description #title {
+    color: #439665;
+    font-size: 21px;
+}
+
+.slide #description #asYouNeed {
+    color: #fff;
+    font-size: 28px;
+}
+
+.slide #description #aboutProduct {
+    color: rgba(255, 255, 255, .6);
+}
+
+#btns {
+    display: flex;
+}
+
+#shopBtn {
+    background-color: #439665;
+    color: #fff;
+    border: 1px solid #439665;
+    padding: 10px 20px;
+    margin-left: 10px;
+}
+
+#learnBtn {
+    background-color: transparent;
+    color: #fff;
+    padding: 10px 17px;
+    border: 1px solid #fff;
+}
+
+.controls {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    bottom: 50%;
+    justify-content: space-between;
+    /* margin: 0px 11px; */
+    padding: 0px -19px;
+}
+
+.right {
+    margin-right: 20px;
+    background-color: transparent;
+    border: 0px;
+    color: #fff;
+    font-size: 25px;
+}
+
+.left {
+    margin-left: 20px;
+    background-color: transparent;
+    border: 0px;
+    color: #fff;
+    font-size: 25px;
+}
+
+.parent-slides{
+    width: 4663px;
+    position: absolute;
+    height: inherit;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+
+
+
+/* ********************* max width 1386 ********************************* */
+
+
+@media only screen and (max-width: 1386px) {
+    header>div:not(#mobileHeader), header .custom-line {
+        display: none;
+    }
+
+    .fa-bars:before {
+        font-family: 'Font Awesome 5 solid';
+        content: "\f0c9";
+        font-size: 20px;
+    }
+
+    #mobileHeader {
+        /* width: 100%; */
+        display: flex;
+        justify-content: space-between;
+        padding: 18px 26px;
+        padding-bottom: 0;
+    }
+
+    .size-m {
+        display: block;
+    }
+
+    .show-burger-menu {
+        right: 0px !important;
+    }
+
+    .close-burger-menu {
+        display: block !important;
+    }
+
+    .searchBar {
+        border: 0;
+        width: 100%;
+        padding: 0px 0px;
+        height: 42px;
+    }
+
+    #burgerMenu .searchBar, #burgerMenu ul>li {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+        padding: 15px 5px;
+        width: 100%;
+    }
+
+    footer {
+        margin-bottom: 53px;
+    }
+
+    #footerTop {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #footerTop li {
+        width: 33% !important;
+    }
+
+    .footer-middle {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .footer-middle #contact-us, .footer-middle #support {
+        width: 45% !important;
+    }
+
+    .footer-middle #useful-links, .footer-middle #info, .footer-middle #categories {
+        width: 25% !important;
+        margin: 40px 0;
+    }
+
+    #bottomMenuResponsive {
+        display: block;
+    }
+
+}
+
+/* ********************* max width 689 ********************************* */
+
+@media only screen and (max-width: 689px) {
+    footer {
+        padding: 20px 10px;
+    }
+
+    #footerTop li {
+        width: 100% !important;
+    }
+}
+
+/* ********************* max width 934 ********************************* */
+
+@media only screen and (max-width:934px) {
+    .footer-middle #contact-us, .footer-middle #support, .footer-middle #useful-links, .footer-middle #info, .footer-middle #categories {
+        width: 100% !important;
+        margin: 40px 0;
+    }
+}
+
+
+
+
+
+/* font iranSans */
+
+@font-face {
+    font-family: 'IranSans';
+    src: url('./Fonts/iranSans/IranSans.eot');
+    /* IE9 Compat Modes */
+    src: url('./Fonts/iranSans/IranSans.eot') format('embedded-opentype'),
+        /* Super Modern Browsers */
+        url('./Fonts/iranSans/IranSans.woff') format('woff'),
+        /* Pretty Modern Browsers */
+        url('./Fonts/iranSans/IranSans.ttf') format('truetype');
+    /* Safari, Android, iOS */
+}
+
+/*!
+ * Font Awesome Pro 5.15.1 by @fontawesome - https://fontawesome.com
+ * License - https://fontawesome.com/license (Commercial License)
+ */
+
+/* 
+.fa,
+.fas {
+    font-family: 'Font Awesome 5 light';
+    font-weight: 900;
+} */
+
+@font-face {
+    font-family: 'Font Awesome 5 light';
+    font-style: normal;
+    font-weight: 900;
+    font-display: block;
+    src: url("./Fonts/awesome/fa-light-300.eot");
+    src: url("./Fonts/awesome/fa-light-300.eot") format("embedded-opentype"),
+        url("./Fonts/awesome/fa-light-300.woff2") format("woff2"),
+        url("./Fonts/awesome/fa-light-300.woff") format("woff"),
+        url("./Fonts/awesome/fa-light-300.ttf") format("truetype"),
+        url("./Fonts/awesome/fa-light-300.svg") format("svg");
+}
+
+@font-face {
+    font-family: 'Font Awesome 5 solid';
+    font-style: normal;
+    font-weight: 900;
+    font-display: block;
+    src: url("./Fonts/awesome/fa-solid-900.eot");
+    src: url("./Fonts/awesome/fa-solid-900.eot") format("embedded-opentype"),
+        url("./Fonts/awesome/fa-solid-900.woff2") format("woff2"),
+        url("./Fonts/awesome/fa-solid-900.woff") format("woff"),
+        url("./Fonts/awesome/fa-solid-900.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'Font Awesome 5 brands';
+    font-style: normal;
+    font-weight: 900;
+    font-display: block;
+    src: url("./Fonts/awesome/fa-brands-400.eot");
+    src: url("./Fonts/awesome/fa-brands-400.eot") format("embedded-opentype"),
+        url("./Fonts/awesome/fa-brands-400.woff2") format("woff2"),
+        url("./Fonts/awesome/fa-brands-400.woff") format("woff"),
+        url("./Fonts/awesome/fa-brands-400.ttf") format("truetype");
+}
